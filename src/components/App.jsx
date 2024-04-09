@@ -1,22 +1,21 @@
-// import { lazy } from 'react';
+import { lazy } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 import Layout from './Layout/Layout';
-// const HomePage = lazy(() => import('pages/HomePage/HomePage'));
-// const LoginPage = lazy(() => import('pages/LoginPage/LoginPage'));
-// const ContactsPage = lazy(() => import('pages/ContactsPage/ContactsPage'));
-// const RegisterPage = lazy(() => import('pages/RegisterPage/RegisterPage'));
-// const NotFound = lazy(() => import('pages/NotFound/NotFound'));
+const HomePage = lazy(() => import('pages/HomePage'));
+const AboutPage = lazy(() => import('pages/ResumePage'));
+const ProjectsPage = lazy(() => import('pages/ProjectsPage'));
+const ErrorPage = lazy(() => import('pages/ErrorPage'));
 
 export const App = () => {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
-        <Route index element={<div>Home</div>} />
-        <Route path="/about" element={<div>About</div>} />
-        <Route path="/projects" element={<div>Projects</div>} />
+        <Route index element={<HomePage />} />
+        <Route path="/resume" element={<AboutPage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
 
-        {/* <Route path="*" element={<NotFound to={'/'} />}></Route> */}
+        <Route path="*" element={<ErrorPage to={'/'} />}></Route>
       </Route>
     </Routes>
   );
