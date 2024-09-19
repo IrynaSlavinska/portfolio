@@ -1,20 +1,18 @@
-import projects from 'data/projects.json';
-import { List } from './ProjectsContent.styled';
+import projects from 'data/projects.js';
+import { List, ListItem } from './ProjectsContent.styled';
 
 const ProjectsContent = () => {
   //
-  console.log(projects);
   return (
     <List>
-      {projects.map(project => {
+      {projects.map(({ id, projectName, type, role }) => {
         return (
-          <li key={project.id}>
-            {/* <img src={project.imageSRC} alt={project.projectName} /> */}
-            <h2>{project.projectName}</h2>
-            <p>Type: {project.type}</p>
-            <p>Role: {project.role}</p>
+          <ListItem key={id}>
+            <h2>{projectName}</h2>
+            <p>Type: {type}</p>
+            <p>Role: {role}</p>
             <button type="button">See more</button>
-          </li>
+          </ListItem>
         );
       })}
     </List>

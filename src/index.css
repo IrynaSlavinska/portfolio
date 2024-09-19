@@ -2,6 +2,7 @@
   --dark: #171717;
   --light: #FAFAFA;
   --green: #8ce436;
+  --animation: 0.2s linear;
 }
 
 @font-face {
