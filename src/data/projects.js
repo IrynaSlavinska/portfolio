@@ -1,3 +1,11 @@
+import webStudio from 'assets/images/web-studio.JPG';
+import simplyChocolate from 'assets/images/simply-chocolate.JPG';
+import veggieBoost from 'assets/images/veggieboost.JPG';
+import yourEnergy from 'assets/images/your-energy.JPG';
+import moviesGallery from 'assets/images/movies-gallery.JPG';
+import emptyPicture from 'assets/images/empty-picture.JPG';
+import taskPro from 'assets/images/task-pro.JPG';
+
 const projects = [
   {
     id: 1,
@@ -9,6 +17,7 @@ const projects = [
     role: 'Developer',
     type: 'Individual project',
     part: 'Whole project',
+    imageSRC: webStudio,
     description:
       'Landing page for web development studio with responsive design for different screens.',
   },
@@ -22,6 +31,7 @@ const projects = [
     role: 'Developer',
     type: 'Individual project',
     part: 'Whole project',
+    imageSRC: simplyChocolate,
     description:
       'Landing page for chocolate workshop with responsive design for different screens.',
   },
@@ -35,6 +45,7 @@ const projects = [
     role: 'Team Lead, Developer',
     type: 'Team project',
     part: '3 easy steps...',
+    imageSRC: veggieBoost,
     description:
       'Website with an adaptive layout for shop with organic products.',
   },
@@ -47,7 +58,8 @@ const projects = [
     libraries: ['axios', 'Notiflix', 'BasicLightbox', 'Lodash'],
     role: 'Developer',
     type: 'Team project',
-    part: 'Devs modal',
+    part: 'Hero section, Devs modal',
+    imageSRC: yourEnergy,
     description:
       "'Your Energy' is a web application dedicated to promoting physical well-being by offering affordable and effective workout solutions. The platform is designed to provide accessible and user-firendly fitness resources to help individuals maintain a healthy and active lifestyle.",
   },
@@ -67,6 +79,7 @@ const projects = [
     role: 'Developer',
     type: 'Individual project',
     part: 'Whole project',
+    imageSRC: moviesGallery,
     description:
       "'Your Energy' is a web application dedicated to promoting physical well-being by offering affordable and effective workout solutions. The platform is designed to provide accessible and user-firendly fitness resources to help individuals maintain a healthy and active lifestyle.",
   },
@@ -89,6 +102,7 @@ const projects = [
     role: 'Developer',
     type: 'Individual project',
     part: 'Whole project',
+    imageSRC: emptyPicture,
     description:
       'An app was developed to provide users with a convenient platform for saving contacts. In project was provided an authorization for security and getting exactly yours data.',
   },
@@ -102,6 +116,7 @@ const projects = [
     role: 'Developer',
     type: 'Individual project',
     part: 'Whole project',
+    imageSRC: emptyPicture,
     description: '',
   },
   {
@@ -114,6 +129,7 @@ const projects = [
     role: 'Scrum master, Developer',
     type: 'Team project',
     part: 'Create/update board modal',
+    imageSRC: taskPro,
     description:
       'TaskPro is an application designed for efficient task and project management. It provides a convenient way to organize tasks and collaborate with teams.',
   },

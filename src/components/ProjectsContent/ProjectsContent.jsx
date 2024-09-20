@@ -5,9 +5,12 @@ const ProjectsContent = () => {
   //
   return (
     <List>
-      {projects.map(({ id, projectName, type, role }) => {
+      {projects.map(({ id, projectName, type, role, imageSRC }) => {
         return (
           <ListItem key={id}>
+            <div>
+              <img src={imageSRC} alt={projectName} />
+            </div>
             <h2>{projectName}</h2>
             <p>Type: {type}</p>
             <p>Role: {role}</p>
