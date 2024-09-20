@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/430.52fc5bcc.chunk.js","mappings":"8HAIA,UAJkB,WAChB,OAAOA,EAAAA,EAAAA,KAAA,OAAAC,SAAK,cACd,C","sources":["pages/ErrorPage.jsx"],"sourcesContent":["const ErrorPage = () => {\n  return <div>Error Page</div>;\n};\n\nexport default ErrorPage;\n"],"names":["_jsx","children"],"sourceRoot":""}

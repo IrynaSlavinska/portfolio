@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/52.eb2b419f.chunk.js","mappings":"4HAIA,UAJmB,WACjB,OAAOA,EAAAA,EAAAA,KAAA,OAAAC,SAAK,eACd,C","sources":["pages/ResumePage.jsx"],"sourcesContent":["const ResumePage = () => {\n  return <div>Resume Page</div>;\n};\n\nexport default ResumePage;\n"],"names":["_jsx","children"],"sourceRoot":""}

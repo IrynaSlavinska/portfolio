@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[52],{52:function(e,u,n){n.r(u);var o=n(184);u.default=function(){return(0,o.jsx)("div",{children:"Resume Page"})}}}]);
-//# sourceMappingURL=52.eb2b419f.chunk.js.map
