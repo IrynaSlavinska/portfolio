@@ -4,18 +4,23 @@ export const List = styled.ul`
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  padding: 20px;
 `;
 
 export const ListItem = styled.li`
-  width: calc((100% - 60px) / 3);
+  width: calc((100% - 90px) / 4);
   display: flex;
   flex-direction: column;
   gap: 12px;
   border: 1px solid var(--green);
   border-radius: 8px;
   padding: 16px;
-  box-shadow: 1px 2px 5px 0px var(--green);
+  transition: transform var(--animation), box-shadow var(--animation);
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+    box-shadow: 0 0 5px var(--green), 0 0 5px inset;
+  }
 `;
 
 export const ImageContainer = styled.div`
@@ -23,7 +28,6 @@ export const ImageContainer = styled.div`
   width: 100%;
   height: 276px;
   overflow: hidden;
-  box-shadow: 1px 2px 5px 0px var(--green);
 `;
 
 export const CardImage = styled.img`
@@ -34,6 +38,7 @@ export const CardImage = styled.img`
 
 export const CardTitle = styled.h2`
   text-align: center;
+  font-size: 18px;
   color: var(--green);
 `;
 
@@ -41,4 +46,8 @@ export const LinkOut = styled.a`
   display: flex;
   align-items: center;
   gap: 12px;
+`;
+
+export const AccentSpan = styled.span`
+  color: var(--green);
 `;

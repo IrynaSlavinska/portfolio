@@ -9,6 +9,7 @@ import {
   CardImage,
   LinkOut,
   CardTitle,
+  AccentSpan,
 } from './ProjectsContent.styled';
 
 const ProjectsContent = () => {
@@ -16,16 +17,7 @@ const ProjectsContent = () => {
   return (
     <List>
       {projects.map(
-        ({
-          id,
-          projectName,
-          type,
-          role,
-          imageSRC,
-          github,
-          livepage,
-          description,
-        }) => {
+        ({ id, projectName, type, role, imageSRC, github, livepage }) => {
           return (
             <ListItem key={id}>
               <ImageContainer>
@@ -52,10 +44,17 @@ const ProjectsContent = () => {
                 </IconContext.Provider>{' '}
                 Live Page
               </LinkOut>
-              <p>Type: {type}</p>
-              <p>Role: {role}</p>
-              <p>Technologies: </p>
-              <p>Description: {description}</p>
+              <p>
+                <AccentSpan>Type:</AccentSpan> {type}
+              </p>
+              <p>
+                <AccentSpan>Role:</AccentSpan> {role}
+              </p>
+              <p>
+                <>
+                  <AccentSpan>Technologies:</AccentSpan>
+                </>
+              </p>
             </ListItem>
           );
         }
